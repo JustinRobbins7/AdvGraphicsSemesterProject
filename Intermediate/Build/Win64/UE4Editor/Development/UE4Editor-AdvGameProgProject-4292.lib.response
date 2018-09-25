@@ -1,0 +1,20 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-AdvGameProgProject-4292.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Program Files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\School Documents\Graphics_Game Programming\AdvGameProgProject\Intermediate\Build\Win64\UE4Editor\Development\AdvGameProgProject\AdvGameProgProject.cpp.obj"
+"D:\School Documents\Graphics_Game Programming\AdvGameProgProject\Intermediate\Build\Win64\UE4Editor\Development\AdvGameProgProject\SWeapon.cpp.obj"
+"D:\School Documents\Graphics_Game Programming\AdvGameProgProject\Intermediate\Build\Win64\UE4Editor\Development\AdvGameProgProject\SCharacter.cpp.obj"
+"D:\School Documents\Graphics_Game Programming\AdvGameProgProject\Intermediate\Build\Win64\UE4Editor\Development\AdvGameProgProject\SHealthComponent.cpp.obj"
+"D:\School Documents\Graphics_Game Programming\AdvGameProgProject\Intermediate\Build\Win64\UE4Editor\Development\AdvGameProgProject\AdvGameProgProject.init.gen.cpp.obj"
+"D:\School Documents\Graphics_Game Programming\AdvGameProgProject\Intermediate\Build\Win64\UE4Editor\Development\AdvGameProgProject\SCharacter.gen.cpp.obj"
+"D:\School Documents\Graphics_Game Programming\AdvGameProgProject\Intermediate\Build\Win64\UE4Editor\Development\AdvGameProgProject\SHealthComponent.gen.cpp.obj"
+"D:\School Documents\Graphics_Game Programming\AdvGameProgProject\Intermediate\Build\Win64\UE4Editor\Development\AdvGameProgProject\SWeapon.gen.cpp.obj"
+"D:\Program Files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\AdvGameProgProject\PCLaunch.rc.res"
+"D:\Program Files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\ModuleVersionResource.rc.inl.res"
+/OUT:"D:\School Documents\Graphics_Game Programming\AdvGameProgProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-AdvGameProgProject-4292.lib"

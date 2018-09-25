@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\AdvGameProgProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{8BB251CB-9FA3-4C74-AD4A-6F10F3169EB2}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\AdvGameProgProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\AdvGameProgProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FFA06526-21C0-454C-8C7E-6D79482BFC42}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\AdvGameProgProject">
+      <UniqueIdentifier>{861DD4EB-1ED2-4213-AC70-505F4B0EB976}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\AdvGameProgProject\AdvGameProgProject.Build.cs">
+      <Filter>Source\AdvGameProgProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\AdvGameProgProject\AdvGameProgProject.cpp">
+      <Filter>Source\AdvGameProgProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvGameProgProject\AdvGameProgProject.h">
+      <Filter>Source\AdvGameProgProject</Filter>
+    </ClInclude>
+    <Filter Include="Source\AdvGameProgProject\Private">
+      <UniqueIdentifier>{264C1A10-AC1A-4658-8B7D-1973B4452854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\AdvGameProgProject\Private\Actors">
+      <UniqueIdentifier>{DBA7406D-9B58-476E-8301-9063F164D07B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AdvGameProgProject\Private\Actors\SProjectile.cpp">
+      <Filter>Source\AdvGameProgProject\Private\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\AdvGameProgProject\Private\Actors\SProjectileWeapon.cpp">
+      <Filter>Source\AdvGameProgProject\Private\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\AdvGameProgProject\Private\Actors\SWeapon.cpp">
+      <Filter>Source\AdvGameProgProject\Private\Actors</Filter>
+    </ClCompile>
+    <Filter Include="Source\AdvGameProgProject\Private\AI">
+      <UniqueIdentifier>{EB0441FB-F629-446A-90B4-63701F78FCA1}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AdvGameProgProject\Private\AI\STrackerBot.cpp">
+      <Filter>Source\AdvGameProgProject\Private\AI</Filter>
+    </ClCompile>
+    <Filter Include="Source\AdvGameProgProject\Private\Character">
+      <UniqueIdentifier>{AD441259-5C31-4902-9B33-B484E567C4AE}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AdvGameProgProject\Private\Character\SCharacter.cpp">
+      <Filter>Source\AdvGameProgProject\Private\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\AdvGameProgProject\Private\Character\SDeployerChar.cpp">
+      <Filter>Source\AdvGameProgProject\Private\Character</Filter>
+    </ClCompile>
+    <Filter Include="Source\AdvGameProgProject\Private\Components">
+      <UniqueIdentifier>{A8579483-726B-4568-B8DD-C3A9CDC7CB05}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AdvGameProgProject\Private\Components\SHealthComponent.cpp">
+      <Filter>Source\AdvGameProgProject\Private\Components</Filter>
+    </ClCompile>
+    <Filter Include="Source\AdvGameProgProject\Public">
+      <UniqueIdentifier>{1E95FB9E-4886-40E6-8B49-00A3B4EBE0E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\AdvGameProgProject\Public\Actors">
+      <UniqueIdentifier>{37FF7BA1-915B-454A-84DE-36793804916C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\AdvGameProgProject\Public\Actors\SProjectile.h">
+      <Filter>Source\AdvGameProgProject\Public\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\AdvGameProgProject\Public\Actors\SProjectileWeapon.h">
+      <Filter>Source\AdvGameProgProject\Public\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\AdvGameProgProject\Public\Actors\SWeapon.h">
+      <Filter>Source\AdvGameProgProject\Public\Actors</Filter>
+    </ClInclude>
+    <Filter Include="Source\AdvGameProgProject\Public\AI">
+      <UniqueIdentifier>{ED4DEBA8-7BCE-4D49-A26A-70ACBE9BD52E}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\AdvGameProgProject\Public\AI\STrackerBot.h">
+      <Filter>Source\AdvGameProgProject\Public\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\AdvGameProgProject\Public\Character">
+      <UniqueIdentifier>{2A3B2BB2-75AA-4C21-8CC9-33950781F9DD}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\AdvGameProgProject\Public\Character\SCharacter.h">
+      <Filter>Source\AdvGameProgProject\Public\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\AdvGameProgProject\Public\Character\SDeployerChar.h">
+      <Filter>Source\AdvGameProgProject\Public\Character</Filter>
+    </ClInclude>
+    <Filter Include="Source\AdvGameProgProject\Public\Components">
+      <UniqueIdentifier>{6D930FFE-0801-4D16-A766-F7A78E844051}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\AdvGameProgProject\Public\Components\SHealthComponent.h">
+      <Filter>Source\AdvGameProgProject\Public\Components</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\AdvGameProgProject\Public\Actors\SDeployable.h">
+      <Filter>Source\AdvGameProgProject\Public\Actors</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\AdvGameProgProject\Private\Actors\SDeployable.cpp">
+      <Filter>Source\AdvGameProgProject\Private\Actors</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
