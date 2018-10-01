@@ -6,6 +6,9 @@
 #include "GameFramework/Actor.h"
 #include "SDeployable.generated.h"
 
+class UProjectileMovementComponent;
+class USphereComponent;
+
 UCLASS()
 class ADVGAMEPROGPROJECT_API ASDeployable : public AActor
 {
@@ -16,8 +19,14 @@ public:
 	ASDeployable();
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+
+	/** Sphere collision component */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Deployment")
+		USphereComponent* CollisionComp;
+
+	/** Projectile movement component */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Deployment")
+		UProjectileMovementComponent* ProjectileMovement;
 
 public:	
 	// Called every frame

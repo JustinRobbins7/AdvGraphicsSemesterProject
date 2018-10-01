@@ -418,6 +418,7 @@
     <ClCompile Include="..\..\Source\AdvGameProgProject\AdvGameProgProject.cpp" />
     <ClInclude Include="..\..\Source\AdvGameProgProject\AdvGameProgProject.h" />
     <ClCompile Include="..\..\Source\AdvGameProgProject\Private\Actors\SDeployable.cpp" />
+    <ClCompile Include="..\..\Source\AdvGameProgProject\Private\Actors\SObjective.cpp" />
     <ClCompile Include="..\..\Source\AdvGameProgProject\Private\Actors\SProjectile.cpp" />
     <ClCompile Include="..\..\Source\AdvGameProgProject\Private\Actors\SProjectileWeapon.cpp" />
     <ClCompile Include="..\..\Source\AdvGameProgProject\Private\Actors\SWeapon.cpp" />
@@ -426,6 +427,7 @@
     <ClCompile Include="..\..\Source\AdvGameProgProject\Private\Character\SDeployerChar.cpp" />
     <ClCompile Include="..\..\Source\AdvGameProgProject\Private\Components\SHealthComponent.cpp" />
     <ClInclude Include="..\..\Source\AdvGameProgProject\Public\Actors\SDeployable.h" />
+    <ClInclude Include="..\..\Source\AdvGameProgProject\Public\Actors\SObjective.h" />
     <ClInclude Include="..\..\Source\AdvGameProgProject\Public\Actors\SProjectile.h" />
     <ClInclude Include="..\..\Source\AdvGameProgProject\Public\Actors\SProjectileWeapon.h" />
     <ClInclude Include="..\..\Source\AdvGameProgProject\Public\Actors\SWeapon.h" />

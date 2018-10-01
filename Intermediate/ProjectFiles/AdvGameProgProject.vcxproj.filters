@@ -118,9 +118,15 @@
     <ClInclude Include="..\..\Source\AdvGameProgProject\Public\Actors\SDeployable.h">
       <Filter>Source\AdvGameProgProject\Public\Actors</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\AdvGameProgProject\Public\Actors\SObjective.h">
+      <Filter>Source\AdvGameProgProject\Public\Actors</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\AdvGameProgProject\Private\Actors\SDeployable.cpp">
+      <Filter>Source\AdvGameProgProject\Private\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\AdvGameProgProject\Private\Actors\SObjective.cpp">
       <Filter>Source\AdvGameProgProject\Private\Actors</Filter>
     </ClCompile>
   </ItemGroup>

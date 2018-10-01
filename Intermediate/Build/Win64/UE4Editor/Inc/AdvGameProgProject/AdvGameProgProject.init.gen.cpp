@@ -23,8 +23,8 @@ void EmptyLinkFunctionForGeneratedCodeAdvGameProgProject_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/AdvGameProgProject",
 				PKG_CompiledIn | 0x00000000,
-				0x70524C62,
-				0xD0D615AC,
+				0xC9BAD773,
+				0xC82A6C4C,
 				SingletonFuncArray, ARRAY_COUNT(SingletonFuncArray),
 				METADATA_PARAMS(nullptr, 0)
 			};

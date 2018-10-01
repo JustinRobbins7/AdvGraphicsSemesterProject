@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ADVGAMEPROGPROJECT_SDeployable_generated_h
 
-#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_RPC_WRAPPERS
-#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_INCLASS_NO_PURE_DECLS \
+#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_RPC_WRAPPERS
+#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASDeployable(); \
 	friend ADVGAMEPROGPROJECT_API class UClass* Z_Construct_UClass_ASDeployable(); \
@@ -25,7 +25,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_INCLASS \
+#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesASDeployable(); \
 	friend ADVGAMEPROGPROJECT_API class UClass* Z_Construct_UClass_ASDeployable(); \
@@ -35,7 +35,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_STANDARD_CONSTRUCTORS \
+#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ASDeployable(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASDeployable) \
@@ -48,7 +48,7 @@ private: \
 public:
 
 
-#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_ENHANCED_CONSTRUCTORS \
+#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ASDeployable(ASDeployable&&); \
@@ -59,26 +59,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASDeployable); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ASDeployable)
 
 
-#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_PRIVATE_PROPERTY_OFFSET
-#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_9_PROLOG
-#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_GENERATED_BODY_LEGACY \
+#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__CollisionComp() { return STRUCT_OFFSET(ASDeployable, CollisionComp); } \
+	FORCEINLINE static uint32 __PPO__ProjectileMovement() { return STRUCT_OFFSET(ASDeployable, ProjectileMovement); }
+
+
+#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_PROLOG
+#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_PRIVATE_PROPERTY_OFFSET \
-	AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_RPC_WRAPPERS \
-	AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_INCLASS \
-	AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_STANDARD_CONSTRUCTORS \
+	AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_PRIVATE_PROPERTY_OFFSET \
+	AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_RPC_WRAPPERS \
+	AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_INCLASS \
+	AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_GENERATED_BODY \
+#define AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_PRIVATE_PROPERTY_OFFSET \
-	AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_INCLASS_NO_PURE_DECLS \
-	AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_12_ENHANCED_CONSTRUCTORS \
+	AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_PRIVATE_PROPERTY_OFFSET \
+	AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_INCLASS_NO_PURE_DECLS \
+	AdvGameProgProject_Source_AdvGameProgProject_Public_Actors_SDeployable_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

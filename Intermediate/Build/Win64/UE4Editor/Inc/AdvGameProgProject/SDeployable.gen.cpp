@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeSDeployable() {}
 	ADVGAMEPROGPROJECT_API UClass* Z_Construct_UClass_ASDeployable();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_AdvGameProgProject();
+	ENGINE_API UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 // End Cross Module References
 	void ASDeployable::StaticRegisterNativesASDeployable()
 	{
@@ -40,6 +42,28 @@ void EmptyLinkFunctionForGeneratedCodeSDeployable() {}
 				{ "ModuleRelativePath", "Public/Actors/SDeployable.h" },
 			};
 #endif
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileMovement_MetaData[] = {
+				{ "Category", "Deployment" },
+				{ "EditInline", "true" },
+				{ "ModuleRelativePath", "Public/Actors/SDeployable.h" },
+				{ "ToolTip", "Projectile movement component" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ProjectileMovement = { UE4CodeGen_Private::EPropertyClass::Object, "ProjectileMovement", RF_Public|RF_Transient|RF_MarkAsNative, 0x00200800000a001d, 1, nullptr, STRUCT_OFFSET(ASDeployable, ProjectileMovement), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(NewProp_ProjectileMovement_MetaData, ARRAY_COUNT(NewProp_ProjectileMovement_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CollisionComp_MetaData[] = {
+				{ "Category", "Deployment" },
+				{ "EditInline", "true" },
+				{ "ModuleRelativePath", "Public/Actors/SDeployable.h" },
+				{ "ToolTip", "Sphere collision component" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CollisionComp = { UE4CodeGen_Private::EPropertyClass::Object, "CollisionComp", RF_Public|RF_Transient|RF_MarkAsNative, 0x00200800000a001d, 1, nullptr, STRUCT_OFFSET(ASDeployable, CollisionComp), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(NewProp_CollisionComp_MetaData, ARRAY_COUNT(NewProp_CollisionComp_MetaData)) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ProjectileMovement,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_CollisionComp,
+			};
 			static const FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 				TCppClassTypeTraits<ASDeployable>::IsAbstract,
 			};
@@ -48,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeSDeployable() {}
 				DependentSingletons, ARRAY_COUNT(DependentSingletons),
 				0x00900080u,
 				nullptr, 0,
-				nullptr, 0,
+				PropPointers, ARRAY_COUNT(PropPointers),
 				nullptr,
 				&StaticCppClassTypeInfo,
 				nullptr, 0,
@@ -58,7 +82,7 @@ void EmptyLinkFunctionForGeneratedCodeSDeployable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASDeployable, 3329254272);
+	IMPLEMENT_CLASS(ASDeployable, 4164427179);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ASDeployable(Z_Construct_UClass_ASDeployable, &ASDeployable::StaticClass, TEXT("/Script/AdvGameProgProject"), TEXT("ASDeployable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ASDeployable);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
