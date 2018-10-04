@@ -6,4 +6,6 @@ ASObjective::ASObjective()
 {
 	//Super::Super();
 	DefendTime = 60.0f;
+
+	OnDestroyed.AddDynamic(this, &ASObjective::HandleCompletion);
 }

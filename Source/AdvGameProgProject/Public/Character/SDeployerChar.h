@@ -20,7 +20,11 @@ public:
 
 	ASDeployerChar();
 
-	//ASObjective* CurrentObjective;
+	UPROPERTY(BlueprintReadWrite, Category = "Deployables")
+	TArray<int32> DeployableCounts;
+
+	UFUNCTION(BlueprintCallable, Category = "Initialization")
+	virtual void InitDeployables();
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -33,7 +37,7 @@ public:
 	void DeployObject_1();
 
 	// Deployable to Spawn 
-	UPROPERTY(EditDefaultsOnly, Category = "Deployment")
+	UPROPERTY(EditDefaultsOnly, Category = "Deployables")
 		TSubclassOf<AActor> DeployableClass_1;
 
 };

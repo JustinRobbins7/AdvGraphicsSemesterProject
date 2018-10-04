@@ -7,9 +7,7 @@
 
 
 ASDeployerChar::ASDeployerChar()
-{
-	
-}
+{}
 
 void ASDeployerChar::DeployObject(int ObjId)
 {
@@ -19,7 +17,7 @@ void ASDeployerChar::DeployObject(int ObjId)
 		UE_LOG(LogTemp, Display, TEXT("DeployObject: DeployableClass error"));
 	}
 
-	if (DeployableClass_1)
+	if (DeployableClass_1 && DeployableCounts[0] < 1)
 	{
 		UE_LOG(LogTemp, Display, TEXT("DeployObject: IF Entered"));
 
@@ -33,12 +31,24 @@ void ASDeployerChar::DeployObject(int ObjId)
 
 		// spawn the projectile at the muzzle
 		GetWorld()->SpawnActor<AActor>(DeployableClass_1, GetActorLocation(), EyeRotation, ActorSpawnParams);
+
+		DeployableCounts[0]++;
 	}
 }
 
 void ASDeployerChar::DeployObject_1()
 {
 	DeployObject(1);
+}
+
+void ASDeployerChar::InitDeployables()
+{
+	UE_LOG(LogTemp, Display, TEXT("Entered InitDeployables"));
+	if (DeployableClass_1)
+	{
+		UE_LOG(LogTemp, Display, TEXT("Adding to DeployableCounts"));
+		DeployableCounts.Add(0);
+	}
 }
 
 void ASDeployerChar::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)

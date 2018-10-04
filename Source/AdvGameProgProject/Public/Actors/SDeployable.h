@@ -8,6 +8,7 @@
 
 class UProjectileMovementComponent;
 class USphereComponent;
+class USHealthComponent;
 
 UCLASS()
 class ADVGAMEPROGPROJECT_API ASDeployable : public AActor
@@ -20,18 +21,17 @@ public:
 
 protected:
 
-	/** Sphere collision component */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Deployment")
-		USphereComponent* CollisionComp;
-
 	/** Projectile movement component */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Deployment")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 		UProjectileMovementComponent* ProjectileMovement;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+		USHealthComponent* HealthComp;
+
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	
 	
 };

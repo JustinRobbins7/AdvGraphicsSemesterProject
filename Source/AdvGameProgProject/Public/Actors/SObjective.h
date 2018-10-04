@@ -6,6 +6,7 @@
 #include "Actors/SDeployable.h"
 #include "SObjective.generated.h"
 
+
 /**
  * 
  */
@@ -22,5 +23,8 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Objective")
 		float DefendTime;
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Objective")
+		void HandleCompletion(AActor* DestroyedActor);
 	
 };

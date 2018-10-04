@@ -17,9 +17,38 @@ void EmptyLinkFunctionForGeneratedCodeSObjective() {}
 	ADVGAMEPROGPROJECT_API UClass* Z_Construct_UClass_ASObjective();
 	ADVGAMEPROGPROJECT_API UClass* Z_Construct_UClass_ASDeployable();
 	UPackage* Z_Construct_UPackage__Script_AdvGameProgProject();
+	ADVGAMEPROGPROJECT_API UFunction* Z_Construct_UFunction_ASObjective_HandleCompletion();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
+	static FName NAME_ASObjective_HandleCompletion = FName(TEXT("HandleCompletion"));
+	void ASObjective::HandleCompletion(AActor* DestroyedActor)
+	{
+		SObjective_eventHandleCompletion_Parms Parms;
+		Parms.DestroyedActor=DestroyedActor;
+		ProcessEvent(FindFunctionChecked(NAME_ASObjective_HandleCompletion),&Parms);
+	}
 	void ASObjective::StaticRegisterNativesASObjective()
 	{
+	}
+	UFunction* Z_Construct_UFunction_ASObjective_HandleCompletion()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DestroyedActor = { UE4CodeGen_Private::EPropertyClass::Object, "DestroyedActor", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(SObjective_eventHandleCompletion_Parms, DestroyedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_DestroyedActor,
+			};
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "Category", "Objective" },
+				{ "ModuleRelativePath", "Public/Actors/SObjective.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_ASObjective, "HandleCompletion", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08080800, sizeof(SObjective_eventHandleCompletion_Parms), PropPointers, ARRAY_COUNT(PropPointers), 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ASObjective_NoRegister()
 	{
@@ -33,6 +62,9 @@ void EmptyLinkFunctionForGeneratedCodeSObjective() {}
 			static UObject* (*const DependentSingletons[])() = {
 				(UObject* (*)())Z_Construct_UClass_ASDeployable,
 				(UObject* (*)())Z_Construct_UPackage__Script_AdvGameProgProject,
+			};
+			static const FClassFunctionLinkInfo FuncInfo[] = {
+				{ &Z_Construct_UFunction_ASObjective_HandleCompletion, "HandleCompletion" }, // 1718162276
 			};
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
@@ -57,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeSObjective() {}
 				&ASObjective::StaticClass,
 				DependentSingletons, ARRAY_COUNT(DependentSingletons),
 				0x00900080u,
-				nullptr, 0,
+				FuncInfo, ARRAY_COUNT(FuncInfo),
 				PropPointers, ARRAY_COUNT(PropPointers),
 				nullptr,
 				&StaticCppClassTypeInfo,
@@ -68,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeSObjective() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASObjective, 2652732067);
+	IMPLEMENT_CLASS(ASObjective, 3216975001);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ASObjective(Z_Construct_UClass_ASObjective, &ASObjective::StaticClass, TEXT("/Script/AdvGameProgProject"), TEXT("ASObjective"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ASObjective);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

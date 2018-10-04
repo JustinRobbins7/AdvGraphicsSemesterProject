@@ -13,8 +13,28 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ADVGAMEPROGPROJECT_SDeployerChar_generated_h
 
-#define AdvGameProgProject_Source_AdvGameProgProject_Public_Character_SDeployerChar_h_17_RPC_WRAPPERS
-#define AdvGameProgProject_Source_AdvGameProgProject_Public_Character_SDeployerChar_h_17_RPC_WRAPPERS_NO_PURE_DECLS
+#define AdvGameProgProject_Source_AdvGameProgProject_Public_Character_SDeployerChar_h_17_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execInitDeployables) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->InitDeployables(); \
+		P_NATIVE_END; \
+	}
+
+
+#define AdvGameProgProject_Source_AdvGameProgProject_Public_Character_SDeployerChar_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execInitDeployables) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->InitDeployables(); \
+		P_NATIVE_END; \
+	}
+
+
 #define AdvGameProgProject_Source_AdvGameProgProject_Public_Character_SDeployerChar_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASDeployerChar(); \
